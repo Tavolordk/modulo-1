@@ -15,7 +15,9 @@ dia = int(input("Ingresa tu día de nacimiento (1-31): "))
 
 # Obtener fecha actual
 hoy = datetime.now()
+print('fecha de hoy ' + str(hoy))
 fecha_nacimiento = datetime(anio, mes, dia)
+print('fecha de nacimiento ' + str(fecha_nacimiento))
 
 # Calcular diferencia
 diferencia = hoy - fecha_nacimiento
@@ -27,4 +29,3 @@ dias_restantes = (edad_dias % 365) % 30
 # Mostrar resultado
 print("\nHola", nombre + "!")
 print(f"Tienes aproximadamente {edad_anios} años, {edad_meses} meses y {dias_restantes} días de edad.")
-
